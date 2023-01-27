@@ -5,88 +5,49 @@
 	<title>Mayur Kamble</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="style.css" />
-
-	<link rel="icon" type="image/x-icon" href="./favicon.png" />
-
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
-
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-		crossorigin="anonymous"></script>
-
-
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
 
-	<!-- Header -->
-	<div id="header">
-		<div class="content">
-			<div style="color: azure;">
-				<h2 class="mb-0 wordspacing">MAYUR KAMBLE</h2>
+			<!-- Header -->
+			<header id="header">
+				<h1 class="wordspacing">MAYUR KAMBLE</h1>
 				<h6 class="wordspacing">SOFTWARE DEVELOPER AND ENGINEER</h6>
-			</div>
-			<div class="actions mt-4">
-				<!-- <li><a href="#" class="button primary icon solid fa-download">Download</a></li>
-				<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li> -->
-				<!-- <li> -->
-				<a class="no-underline" href="https://www.linkedin.com/in/mayur-kamble-02bb37215" target="_blank">
-					<img src="icon/linkedin.png" width="32" alt="my linkedin" />
-				</a>&nbsp;&nbsp;
-				<!-- </li>
-				<li> -->
-				<a class="no-underline" href="https://github.com/cse-mkamble" target="_blank">
-					<img src="icon/github.png" width="32" alt="my github" />
-				</a>&nbsp;&nbsp;
-				<!-- </li>
-				<li> -->
-				<a class="no-underline" href="/portfolio" target="_blank">
-					<img src="icon/briefcase.png" width="32" alt="my briefcase" />
-				</a>&nbsp;&nbsp;
-				<!-- </li> -->
-			</div>
+				<nav>
+					<ul>
+						<li><a href="https://www.linkedin.com/in/mayur-kamble-02bb37215" target="_blank"
+								class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://github.com/csemkdev" target="_blank" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
+						<li><a href="/portfolio" target="_blank" class="icon solid fa-briefcase"><span
+									class="label">Portfolio</span></a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright wordspacing">&copy; MAYUR KAMBLE |
+					DESIGN: <a href="http://html5up.net">HTML5 UP</a>.</span>
+			</footer>
+
 		</div>
-		<div class="image phone">
-			<div class="inner"><img src="images/about.jpg" alt="" /></div>
-		</div>
-
 	</div>
-
-	<!-- Footer -->
-	<div id="foota">
-		<p class="text-center" style="letter-spacing: 2px; font-size: smaller;">&copy; MAYUR KAMBLE |
-			DESIGN: <a href="http://html5up.net" style="color: azure;">HTML5 UP</a></p>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-		crossorigin="anonymous"></script>
-
+	<script>
+		window.onload = function () { document.body.classList.remove('is-preload'); }
+		window.ontouchmove = function () { return false; }
+		window.onorientationchange = function () { document.body.scrollTop = 0; }
+	</script>
 </body>
 
 </html>
